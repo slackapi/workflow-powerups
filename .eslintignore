@@ -1,0 +1,7 @@
+*.html
+*.md
+*.png
+*.txt
+package-lock.json
+node_modules/*
+out/*

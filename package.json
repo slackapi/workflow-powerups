@@ -1,0 +1,29 @@
+{
+  "name": "workflow-powerups",
+  "version": "1.0.0",
+  "description": "A Slack App with sample Workflow Steps",
+  "main": "out/server.js",
+  "scripts": {
+    "watch-ts": "tsc --watch",
+    "watch-node": "source .env && nodemon -w ./out server.js",
+    "format": "prettier --config .prettierrc 'src/**/*' --write",
+    "lint": "eslint './src/**/*'",
+    "test": "npm run lint"
+  },
+  "author": "Brad Harris",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/bolt": "feat-workflow-steps"
+  },
+  "devDependencies": {
+    "@slack/types": "feat-workflow-steps",
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
+    "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.1.1",
+    "typescript": "^4.0.2"
+  }
+}
