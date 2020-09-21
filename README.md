@@ -4,12 +4,11 @@ A Slack App with a collection of Workflow Steps. It's written with [Bolt for JS]
 
 ## Development
 
-You'll need a `.env` file with some of your Slack App credentials
+You'll need a `.env` file with some of your Slack App credentials.
 
 ```.env
 export SLACK_BOT_TOKEN="..."
 export SLACK_SIGNING_SECRET="..."
-export SLACK_VERIFICATION_TOKEN="..."
 ```
 
 ## Install Dependencies
