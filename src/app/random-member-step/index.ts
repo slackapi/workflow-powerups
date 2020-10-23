@@ -3,7 +3,6 @@ import { App, WorkflowStep } from "@slack/bolt";
 export const configureRandomMemberStep = (app: App): void => {
   const step = new WorkflowStep("random_member", {
     edit: [
-      /* @ts-ignore */
       async ({ ack, step, configure }) => {
         ack();
 
@@ -42,7 +41,6 @@ export const configureRandomMemberStep = (app: App): void => {
       },
     ],
     save: [
-      /* @ts-ignore */
       async ({ ack, step, view, update }) => {
         ack();
 
@@ -67,7 +65,6 @@ export const configureRandomMemberStep = (app: App): void => {
       },
     ],
     execute: [
-      /* @ts-ignore */
       async ({ context, step, complete, fail }) => {
         console.log("execute step: ", step);
 
