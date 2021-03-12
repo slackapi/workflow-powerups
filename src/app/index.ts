@@ -1,5 +1,6 @@
 import { App } from "@slack/bolt";
 import { configureRandomMemberStep } from "./random-member-step";
+import { configureRandomStringStep } from "./random-string-step";
 
 export const configureBoltApp = (): App => {
   const app = new App({
@@ -8,6 +9,7 @@ export const configureBoltApp = (): App => {
   });
 
   configureRandomMemberStep(app);
+  configureRandomStringStep(app);
 
   return app;
 };
